@@ -1,0 +1,11 @@
+# Footer navigation links
+
+- title:
+  url:
+
+
+- title: Subscribe
+  url: mailto:brian.cohn@usc.edu?subject=Subscribe Request&body=Please add my email to the subscribe list.
+
+- title: External Page
+  url: http://mademistakes.com

@@ -1,0 +1,12 @@
+# Site navigation links
+
+  - title: Docs
+  url: /docs/
+
+- title: help
+  url: https://github.com/briancohn/retina/issues/new
+  excerpt: "Submit a GitHub ticket to get help with errors, bugs, and submit new ideas."
+  image: 300x200.gif
+
+- title: About the author
+  url: https://github.com/briancohn/
