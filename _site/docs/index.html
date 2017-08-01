@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Docs • My Site</title>
+    <meta name="description" content="Docs for retina project.">
+    
+    
+    	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="Docs">
+	<meta name="twitter:description" content="Docs for retina project.">
+	
+	
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image" content="/images/">
+	
+	<!-- Open Graph -->
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Docs">
+	<meta property="og:description" content="Docs for retina project.">
+	<meta property="og:url" content="/docs/">
+	<meta property="og:site_name" content="My Site">
+
+    <link rel="canonical" href="/docs/">
+
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="My Site Atom Feed">
+    <link href="/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- HTML5 Shiv and Media Query Support for IE -->
+    <!--[if lt IE 9]>
+      <script src="/js/vendor/html5shiv.min.js"></script>
+      <script src="/js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body id="js-body">
+    <!--[if lt IE 9]><div class="upgrade notice-warning"><strong>Your browser is quite old!</strong> Why not <a href="http://whatbrowser.org/">upgrade to a newer one</a> to better enjoy this site?</div><![endif]-->
+
+    <header id="masthead">
+  <div class="inner-wrap">
+    <a href="/" class="site-title">My Site</a>
+    <nav role="navigation" class="menu top-menu">
+        <ul class="menu-item">
+	<li class="home"><a href="/">My Site</a></li>
+	
+    
+    <li><a href="/docs/" >Docs</a></li>
+  
+    
+    <li><a href="https://github.com/briancohn/retina/issues/new" target="_blank">help</a></li>
+  
+    
+    <li><a href="https://github.com/briancohn/" target="_blank">About the author</a></li>
+  
+</ul>
+    </nav>
+  </div><!-- /.inner-wrap -->
+</header><!-- /.masthead -->
+    <nav role="navigation" id="js-menu" class="sliding-menu-content">
+  <h5>My Site <span>Table of Contents</span></h5>
+  <ul class="menu-item">
+    <li>
+      <a href="/docs/">
+        
+        <div class="title">Docs</div>
+        
+      </a>
+    </li><li>
+      <a href="https://github.com/briancohn/retina/issues/new">
+        <img src="/images/300x200.gif" alt="teaser" class="teaser">
+        <div class="title">help</div>
+        <p class="excerpt">Submit a GitHub ticket to get help with errors, bugs, and submit new ideas.</p>
+      </a>
+    </li><li>
+      <a href="https://github.com/briancohn/">
+        
+        <div class="title">About the author</div>
+        
+      </a>
+    </li>
+  </ul>
+</nav>
+<button type="button" id="js-menu-trigger" class="sliding-menu-button lines-button x2" role="button" aria-label="Toggle Navigation">
+  <span class="nav-lines"></span>
+</button>
+
+<div id="js-menu-screen" class="menu-screen"></div>
+
+
+    <div id="page-wrapper">
+      <div id="main" role="main">
+	<article class="wrap" itemscope itemtype="http://schema.org/Article">
+		
+		
+		<div class="page-title">
+			<h1>Docs</h1>
+		</div>
+		<div class="inner-wrap">
+			<div id="content" class="page-content" itemprop="articleBody">
+				<h2 id="what-is-project-retina">What is Project Retina?</h2>
+<p>Scientists often take measurements of cell densities across the rear surface of the eye (the retina), to better understand how an animal’s vision works, changes, develops, or evolves.</p>
+
+<p>This project was started in 2013 to
+- improve the statistical rigor of analyses
+- enhance replicability of published retinal mapping research
+- reduce the barrier to entry of this research field.</p>
+
+<h2 id="getting-started">Getting Started:</h2>
+
+<h3 id="install-on-your-computer">1. Install on your computer</h3>
+
+<h5 id="mac">Mac</h5>
+<p><a href="http://cran.r-project.org/bin/macosx/" title="Mac OS X">Install R 3.1.2</a><br />
+<a href="https://itunes.apple.com/us/app/xcode/id497799835?mt=12#">Install Xcode</a></p>
+
+<p>Run commands line by line in the Terminal:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>ruby -e <span class="s2">"</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">"</span>  
+brew install gtk+  
+<span class="nb">export </span><span class="nv">PKG_CONFIG_PATH</span><span class="o">=</span>/usr/X11/lib/pkgconfig:<span class="nv">$PKG_CONFIG_PATH</span>  
+brew install caskroom/cask/brew-cask  
+brew cask install xquartz  
+xcode-select --install  
+</code></pre>
+</div>
+
+<h5 id="windows">Windows</h5>
+<p><a href="http://cran.r-project.org/bin/windows/base/" title="Windows">Install R 3.1.2</a><br />
+<a href="http://cran.r-project.org/bin/windows/Rtools/" title="Windows">Install RTools</a></p>
+
+<h5 id="linux">Linux</h5>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo apt-get -y build-dep libcurl4-gnutls-dev  
+sudo apt-get -y install libcurl4-gnutls-dev  
+sudo apt-get -y install libglu1-mesa-dev  
+sudo apt-get -y install r-base-core r-base r-cran-rgl libgtk2.0-dev  
+</code></pre>
+</div>
+
+<h3 id="set-up-packages-in-r">2. Set up packages in R</h3>
+<div class="language-R highlighter-rouge"><pre class="highlight"><code><span class="n">install.packages</span><span class="p">(</span><span class="n">c</span><span class="p">(</span><span class="s2">"cairoDevice"</span><span class="p">,</span> <span class="s2">"RGtk2"</span><span class="p">,</span> <span class="s2">"devtools"</span><span class="p">,</span> <span class="s2">"retistruct"</span><span class="p">),</span> <span class="n">type</span><span class="o">=</span><span class="s2">"source"</span><span class="p">)</span>  
+<span class="n">install.packages</span><span class="p">(</span><span class="s1">'devtools'</span><span class="p">)</span>  
+<span class="n">devtools</span><span class="o">::</span><span class="n">install_github</span><span class="p">(</span><span class="s1">'briancohn/retina'</span><span class="p">)</span>  
+<span class="n">devtools</span><span class="o">::</span><span class="n">install_github</span><span class="p">(</span><span class="s1">'bcohn12/retina'</span><span class="p">)</span>  
+</code></pre>
+</div>
+<p>### 3. Run a demo to make a map!</p>
+
+<div class="language-R highlighter-rouge"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">retina</span><span class="p">)</span>   
+<span class="n">retinaplot</span><span class="p">(</span><span class="n">Pmol_753</span><span class="p">)</span>  
+</code></pre>
+</div>
+
+				<hr />
+				<footer class="page-footer">
+					
+					<div class="inline-btn">
+	<a class="btn-social twitter" href="https://twitter.com/intent/tweet?text=Docs&amp;url=/docs/&amp;via=" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter</a>
+	<a class="btn-social facebook" href="https://www.facebook.com/sharer/sharer.php?u=/docs/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Share on Facebook</a>
+	<a class="btn-social google-plus"  href="https://plus.google.com/share?url=/docs/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Share on Google+</a>
+</div><!-- /.share-this -->
+
+					<div class="page-meta">
+	<p>Updated <time datetime="2017-07-30T03:44:20Z" itemprop="datePublished">July 30, 2017</time></p>
+</div><!-- /.page-meta -->
+				</footer><!-- /.footer -->
+				<aside>
+					
+				</aside>
+			</div><!-- /.content -->
+		</div><!-- /.inner-wrap -->
+		
+	</article><!-- ./wrap -->
+</div><!-- /#main -->
+
+      <footer role="contentinfo" id="site-footer">
+	<nav role="navigation" class="menu bottom-menu">
+		<ul class="menu-item">
+		
+      
+			<li><a href="" ></a></li>
+		
+      
+			<li><a href="mailto:brian.cohn@usc.edu?subject=Subscribe Request&body=Please add my email to the subscribe list." >Subscribe</a></li>
+		
+      
+			<li><a href="http://mademistakes.com" target="_blank">External Page</a></li>
+		
+		</ul>
+	</nav><!-- /.bottom-menu -->
+	<p class="copyright">&#169; 2017 <a href="">My Site</a> powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> + <a href="http://mmistakes.github.io/skinny-bones-jekyll/" rel="nofollow">Skinny Bones</a>.</p>
+</footer>
+    </div>
+
+    <script src="/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="/js/main.js"></script>
+
+  </body>
+
+</html>
